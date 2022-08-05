@@ -63,7 +63,7 @@ jobs:
           push: true
           tags: exusainov/infra_actions:latest
           context: infra_project
-          file: ingra_project/Dockerfile
+          file: infra_project/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
