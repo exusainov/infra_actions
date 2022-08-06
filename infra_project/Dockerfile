@@ -1,6 +1,6 @@
 FROM python:3.7-slim
-COPY . /app
-COPY ../requirements.txt /app
+WORKDIR /app
+WORKDIR /infra_project
+COPY . ./
 RUN pip install -r /app/requirements.txt
-WORKDIR /app/infra_project/
 CMD python manage.py runserver 0:5000
